@@ -1,14 +1,6 @@
 
 <?php
 
-$notes = [
-    "Mohamed" => 14,
-    "Sami" => 9,
-    "Amel" => 17,
-    "Yassine" => 8,
-    "Ines" => 12
-];
-
 function afficherNotes($notes) {
     foreach ($notes as $nom => $note) {
         echo "Nom : " . $nom . " Note : " . $note . "<br>";
@@ -41,16 +33,3 @@ function ajouterBonus($notes) {
     print_r($bonus);
     echo "<br>";
 }
-
-afficherNotes($notes);
-
-echo "Moyenne : " . moyenne($notes) . "<br>";
-
-afficherAdmis($notes);
-
-trierNotes($notes);
-
-echo "Notes avec bonus : <br>";
-ajouterBonus($notes);
-
-?>
